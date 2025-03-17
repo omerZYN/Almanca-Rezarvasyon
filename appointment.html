@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termin vereinbaren - Dr. Psychologe [Name Nachname]</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="nav-overlay"></div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                Dr. [Name Nachname]
+            </a>
+            <div class="mobile-nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="about.html">Über Mich</a></li>
+                <li><a href="services.html">Leistungen</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="appointment.html" class="active">Termin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="appointment-page">
+        <div class="container">
+            <div class="appointment-box">
+                <h1>Termin vereinbaren</h1>
+                
+                <!-- Gesprächstyp-Auswahl -->
+                <div class="session-type">
+                    <button class="session-type-button active">
+                        <span class="material-icons">person</span>
+                        Persönliches Gespräch
+                    </button>
+                    <button class="session-type-button">
+                        <span class="material-icons">videocam</span>
+                        Online-Beratung
+                    </button>
+                </div>
+
+                <!-- Datum und Uhrzeit-Auswahl -->
+                <div class="date-time-selection grid grid-2">
+                    <!-- Datum-Auswahl -->
+                    <div class="date-selector">
+                        <h3>
+                            <span class="material-icons">event</span>
+                            Termindatum
+                        </h3>
+                        <div class="date-buttons">
+                            <button class="appointment-date-button active">
+                                <span class="day">Heute</span>
+                                <span class="date">16. März</span>
+                            </button>
+                            <button class="appointment-date-button">
+                                <span class="day">Morgen</span>
+                                <span class="date">17. März</span>
+                            </button>
+                            <button class="appointment-date-button">
+                                <span class="day">Montag</span>
+                                <span class="date">18. März</span>
+                            </button>
+                            <button class="appointment-date-button">
+                                <span class="day">Dienstag</span>
+                                <span class="date">19. März</span>
+                            </button>
+                            <button class="appointment-date-button">
+                                <span class="day">Mittwoch</span>
+                                <span class="date">20. März</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Uhrzeit-Auswahl -->
+                    <div class="time-selector">
+                        <h3>
+                            <span class="material-icons">schedule</span>
+                            Verfügbare Zeiten
+                        </h3>
+                        <div class="time-slots grid grid-4">
+                            <button class="appointment-time-button active">09:00</button>
+                            <button class="appointment-time-button">10:00</button>
+                            <button class="appointment-time-button">11:00</button>
+                            <button class="appointment-time-button">12:00</button>
+                            <button class="appointment-time-button">13:00</button>
+                            <button class="appointment-time-button">14:00</button>
+                            <button class="appointment-time-button">15:00</button>
+                            <button class="appointment-time-button">16:00</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kontaktformular -->
+                <div class="contact-form">
+                    <h3>
+                        <span class="material-icons">person_pin</span>
+                        Kontaktinformationen
+                    </h3>
+                    <div class="form-grid grid grid-2">
+                        <div class="form-group">
+                            <input type="text" placeholder="Vor- und Nachname" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Telefon" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="E-Mail" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="reason" required>
+                                <option value="" disabled selected>Grund für den Termin</option>
+                                <option value="erstgespräch">Erstgespräch</option>
+                                <option value="beratung">Psychologische Beratung</option>
+                                <option value="therapie">Therapiesitzung</option>
+                                <option value="sonstiges">Sonstiges</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Ihre Nachricht oder Anmerkungen (Optional)"></textarea>
+                    </div>
+                    <button type="submit" class="form-submit-button">Termin bestätigen</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content grid grid-3">
+                <div class="footer-section">
+                    <h3>Dr. [Name Nachname]</h3>
+                    <p>Professionelle psychologische Unterstützung für Ihre mentale Gesundheit.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <p>Email: info@psychologe.de</p>
+                    <p>Telefon: +49 555 555 55 55</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Folgen Sie uns</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-media-button">Instagram</a>
+                        <a href="#" class="social-media-button">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Dr. [Name Nachname]. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        const navOverlay = document.querySelector('.nav-overlay');
+        const navLinkItems = document.querySelectorAll('.nav-links a');
+
+        mobileNavToggle.addEventListener('click', function() {
+            this.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            navOverlay.classList.toggle('active');
+            document.body.classList.toggle('no-scroll');
+            
+            // Menü görünürlüğünü zorlama
+            if (navLinks.classList.contains('active')) {
+                navLinks.style.display = 'flex';
+                navLinks.style.right = '0';
+            } else {
+                navLinks.style.right = '-100%';
+            }
+        });
+
+        navOverlay.addEventListener('click', function() {
+            mobileNavToggle.classList.remove('active');
+            navLinks.classList.remove('active');
+            this.classList.remove('active');
+            document.body.classList.remove('no-scroll');
+            navLinks.style.right = '-100%';
+        });
+        
+        navLinkItems.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNavToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+                navOverlay.classList.remove('active');
+                document.body.classList.remove('no-scroll');
+                navLinks.style.right = '-100%';
+            });
+        });
+        
+        // Seans tipleri arasında geçiş yapma
+        const sessionTypeButtons = document.querySelectorAll('.session-type-button');
+        const appointmentSteps = document.querySelectorAll('.appointment-step');
+        
+        sessionTypeButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Aktif sınıfı kaldır
+                sessionTypeButtons.forEach(btn => btn.classList.remove('active'));
+                
+                // Tıklanan butona aktif sınıfı ekle
+                this.classList.add('active');
+                
+                // Buton değerini al ve ilerleme butonuna geçir
+                const sessionType = this.dataset.type;
+                document.querySelector('#session-type-value').value = sessionType;
+                
+                // İlk adımı aktif et
+                document.querySelector('#next-step').disabled = false;
+            });
+        });
+        
+        // Adımlar arasında geçiş
+        const prevStepButton = document.querySelector('#prev-step');
+        const nextStepButton = document.querySelector('#next-step');
+        let currentStep = 0;
+        
+        // İleri gitme
+        nextStepButton.addEventListener('click', () => {
+            // Güncel adımı gizle
+            appointmentSteps[currentStep].classList.remove('active');
+            
+            // Sonraki adıma geç
+            currentStep++;
+            
+            // Sonraki adımı göster
+            appointmentSteps[currentStep].classList.add('active');
+            
+            // Geri butonunu aktifleştir
+            prevStepButton.style.display = 'inline-flex';
+            
+            // Son adımda ise ileri butonunu gönder butonuna çevir
+            if (currentStep === appointmentSteps.length - 1) {
+                nextStepButton.textContent = 'Senden';
+                nextStepButton.classList.add('submit-button');
+            }
+        });
+        
+        // Geri gitme
+        prevStepButton.addEventListener('click', () => {
+            // Güncel adımı gizle
+            appointmentSteps[currentStep].classList.remove('active');
+            
+            // Önceki adıma geç
+            currentStep--;
+            
+            // Önceki adımı göster
+            appointmentSteps[currentStep].classList.add('active');
+            
+            // İlk adımda ise geri butonunu gizle
+            if (currentStep === 0) {
+                prevStepButton.style.display = 'none';
+            }
+            
+            // İleri butonunu normal haline getir
+            nextStepButton.textContent = 'Weiter';
+            nextStepButton.classList.remove('submit-button');
+        });
+        
+        // Tarih seçimini aktifleştir
+        const dateButtons = document.querySelectorAll('.date-button');
+        
+        dateButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Aktif sınıfı kaldır
+                dateButtons.forEach(btn => btn.classList.remove('active'));
+                
+                // Tıklanan butona aktif sınıfı ekle
+                this.classList.add('active');
+                
+                // Buton değerini al ve ilerleme butonuna geçir
+                const date = this.dataset.date;
+                document.querySelector('#appointment-date-value').value = date;
+                
+                // Saat seçimini aktifleştir
+                document.querySelector('.time-selection').classList.add('active');
+            });
+        });
+        
+        // Saat seçimini aktifleştir
+        const timeButtons = document.querySelectorAll('.time-button');
+        
+        timeButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Aktif sınıfı kaldır
+                timeButtons.forEach(btn => btn.classList.remove('active'));
+                
+                // Tıklanan butona aktif sınıfı ekle
+                this.classList.add('active');
+                
+                // Buton değerini al ve ilerleme butonuna geçir
+                const time = this.dataset.time;
+                document.querySelector('#appointment-time-value').value = time;
+                
+                // İlerleme butonunu aktifleştir
+                nextStepButton.disabled = false;
+            });
+        });
+        
+        // Navbar scroll handling
+        const navbar = document.querySelector('.navbar');
+        
+        // Scroll event handling with throttle for better performance
+        let lastScrollTop = 0;
+        let scrollThreshold = 100;
+        let ticking = false;
+        let hideTimeout;
+
+        window.addEventListener('scroll', () => {
+            const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    // Navbar transformation
+                    if (currentScrollTop > scrollThreshold) {
+                        navbar.classList.add('scrolled');
+                        
+                        // Only hide when scrolling down and not at the top
+                        if (currentScrollTop > lastScrollTop && currentScrollTop > 150) {
+                            // Scrolling down - hide navbar
+                            navbar.style.transform = 'translateY(-100%)';
+                            clearTimeout(hideTimeout);
+                        } else {
+                            // Scrolling up - show navbar
+                            navbar.style.transform = 'translateY(0)';
+                            
+                            // Auto-hide after 3 seconds of no scrolling
+                            clearTimeout(hideTimeout);
+                            if (currentScrollTop > 300) {
+                                hideTimeout = setTimeout(() => {
+                                    navbar.style.transform = 'translateY(-100%)';
+                                }, 3000);
+                            }
+                        }
+                    } else {
+                        navbar.classList.remove('scrolled');
+                        navbar.style.transform = 'translateY(0)';
+                    }
+
+                    lastScrollTop = currentScrollTop;
+                    ticking = false;
+                });
+
+                ticking = true;
+            }
+        });
+    </script>
+</body>
+</html> 

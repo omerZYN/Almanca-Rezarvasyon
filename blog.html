@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#1a365d">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Blog - Dr. Psychologe [Name Nachname]</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav-overlay"></div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                Dr. [Name Nachname]
+            </a>
+            <div class="mobile-nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="about.html">Über Mich</a></li>
+                <li><a href="services.html">Leistungen</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="appointment.html">Termin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Blog Hauptüberschrift -->
+    <header class="blog-hero">
+        <div class="container">
+            <h1>Blog</h1>
+            <p>Nützliche Informationen über Psychologie und psychische Gesundheit</p>
+        </div>
+    </header>
+
+    <hr class="section-divider">
+
+    <!-- Blog-Inhalt -->
+    <main class="blog-page section-light">
+        <div class="container">
+            <!-- Kategorie-Filter -->
+            <div class="blog-categories">
+                <button class="blog-category-filter active">Alle</button>
+                <button class="blog-category-filter">Angst</button>
+                <button class="blog-category-filter">Depression</button>
+                <button class="blog-category-filter">Beziehungen</button>
+                <button class="blog-category-filter">Persönliche Entwicklung</button>
+            </div>
+
+            <!-- Blog-Artikel Grid -->
+            <div class="blog-grid grid grid-auto-md">
+                <!-- Blog-Karte 1 -->
+                <article class="blog-card">
+                    <div class="blog-card-image">
+                        <img src="public/images/Klinik-psikolog.png" alt="Blog-Bild">
+                        <div class="blog-category">Angst</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <h2>Methoden zur Angstbewältigung</h2>
+                        <p class="blog-meta">15. März 2024 • 5 Min. Lesezeit</p>
+                        <p class="blog-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                        <a href="#" class="blog-read-more">Weiterlesen →</a>
+                    </div>
+                </article>
+
+                <!-- Blog-Karte 2 -->
+                <article class="blog-card">
+                    <div class="blog-card-image">
+                        <img src="public/images/Klinik-psikolog.png" alt="Blog-Bild">
+                        <div class="blog-category">Beziehungen</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <h2>5 Grundregeln für gesunde Beziehungen</h2>
+                        <p class="blog-meta">10. März 2024 • 4 Min. Lesezeit</p>
+                        <p class="blog-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                        <a href="#" class="blog-read-more">Weiterlesen →</a>
+                    </div>
+                </article>
+
+                <!-- Blog-Karte 3 -->
+                <article class="blog-card">
+                    <div class="blog-card-image">
+                        <img src="public/images/Klinik-psikolog.png" alt="Blog-Bild">
+                        <div class="blog-category">Persönliche Entwicklung</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <h2>Techniken zur Selbstvertrauensentwicklung</h2>
+                        <p class="blog-meta">5. März 2024 • 6 Min. Lesezeit</p>
+                        <p class="blog-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                        <a href="#" class="blog-read-more">Weiterlesen →</a>
+                    </div>
+                </article>
+
+                <!-- Blog-Karte 4 -->
+                <article class="blog-card">
+                    <div class="blog-card-image">
+                        <img src="public/images/Klinik-psikolog.png" alt="Blog-Bild">
+                        <div class="blog-category">Depression</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <h2>Wichtige Schritte im Umgang mit Depression</h2>
+                        <p class="blog-meta">1. März 2024 • 7 Min. Lesezeit</p>
+                        <p class="blog-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                        <a href="#" class="blog-read-more">Weiterlesen →</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Seitennummerierung -->
+            <div class="pagination">
+                <button class="pagination-button active">1</button>
+                <button class="pagination-button">2</button>
+                <button class="pagination-button">3</button>
+                <button class="pagination-button">→</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content grid grid-3">
+                <div class="footer-section">
+                    <h3>Dr. [Name Nachname]</h3>
+                    <p>Professionelle psychologische Unterstützung für Ihre mentale Gesundheit.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <p>Email: info@psychologe.de</p>
+                    <p>Telefon: +49 555 555 55 55</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Folgen Sie uns</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-media-button">Instagram</a>
+                        <a href="#" class="social-media-button">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Dr. [Name Nachname]. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        const navOverlay = document.querySelector('.nav-overlay');
+        const navLinkItems = document.querySelectorAll('.nav-links a');
+
+        mobileNavToggle.addEventListener('click', function() {
+            this.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            navOverlay.classList.toggle('active');
+            document.body.classList.toggle('no-scroll');
+            
+            // Menü görünürlüğünü zorlama
+            if (navLinks.classList.contains('active')) {
+                navLinks.style.display = 'flex';
+                navLinks.style.right = '0';
+            } else {
+                navLinks.style.right = '-100%';
+            }
+        });
+
+        navOverlay.addEventListener('click', function() {
+            mobileNavToggle.classList.remove('active');
+            navLinks.classList.remove('active');
+            this.classList.remove('active');
+            document.body.classList.remove('no-scroll');
+            navLinks.style.right = '-100%';
+        });
+        
+        navLinkItems.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNavToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+                navOverlay.classList.remove('active');
+                document.body.classList.remove('no-scroll');
+                navLinks.style.right = '-100%';
+            });
+        });
+        
+        // Kategori Filtreleme
+        const categoryButtons = document.querySelectorAll('.blog-category-filter');
+        const blogCards = document.querySelectorAll('.blog-card');
+
+        categoryButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Aktif sınıfı kaldır
+                categoryButtons.forEach(btn => btn.classList.remove('active'));
+                
+                // Tıklanan butona aktif sınıfı ekle
+                button.classList.add('active');
+                
+                const category = button.textContent.trim();
+                
+                // Tüm kartları göster veya filtrele
+                if (category === 'Alle') {
+                    blogCards.forEach(card => {
+                        card.style.display = 'flex';
+                    });
+                } else {
+                    blogCards.forEach(card => {
+                        const cardCategory = card.querySelector('.blog-category').textContent.trim();
+                        if (cardCategory === category) {
+                            card.style.display = 'flex';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                }
+            });
+        });
+        
+        // Navbar scroll handling
+        const navbar = document.querySelector('.navbar');
+        
+        // Scroll event handling with throttle for better performance
+        let lastScrollTop = 0;
+        let scrollThreshold = 100;
+        let ticking = false;
+        let hideTimeout;
+
+        window.addEventListener('scroll', () => {
+            const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    // Navbar transformation
+                    if (currentScrollTop > scrollThreshold) {
+                        navbar.classList.add('scrolled');
+                        
+                        // Only hide when scrolling down and not at the top
+                        if (currentScrollTop > lastScrollTop && currentScrollTop > 150) {
+                            // Scrolling down - hide navbar
+                            navbar.style.transform = 'translateY(-100%)';
+                            clearTimeout(hideTimeout);
+                        } else {
+                            // Scrolling up - show navbar
+                            navbar.style.transform = 'translateY(0)';
+                            
+                            // Auto-hide after 3 seconds of no scrolling
+                            clearTimeout(hideTimeout);
+                            if (currentScrollTop > 300) {
+                                hideTimeout = setTimeout(() => {
+                                    navbar.style.transform = 'translateY(-100%)';
+                                }, 3000);
+                            }
+                        }
+                    } else {
+                        navbar.classList.remove('scrolled');
+                        navbar.style.transform = 'translateY(0)';
+                    }
+
+                    lastScrollTop = currentScrollTop;
+                    ticking = false;
+                });
+
+                ticking = true;
+            }
+        });
+    </script>
+</body>
+</html> 
